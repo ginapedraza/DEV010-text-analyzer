@@ -16,6 +16,9 @@ textarea.addEventListener('keyup', ()=>{
 
     let charactCountExcludingSpaces = document.querySelector('.charact-count-no-spaces-el');
     charactCountExcludingSpaces.innerHTML = analyzer.getCharacterCountExcludingSpaces(textarea.value)
+
+    let averageWordLengthEl = document.querySelector('.word-length-average-el');
+    averageWordLengthEl.innerHTML = analyzer.getAverageWordLength(textarea.value)
         
     });
 
