@@ -5,34 +5,34 @@ import analyzer from './analyzer.js';
 
 // EVENTO KEYUP
 
-let textarea = document.querySelector('textarea[name="user-input"]');
-textarea.addEventListener('keyup', ()=>{
+const textarea = document.querySelector('textarea[name="user-input"]');
+textarea.addEventListener('keyup', () => {
     
-    let wordCountEl = document.querySelector('.word-count-el');
-    wordCountEl.innerHTML = analyzer.getWordCount(textarea.value) // argumento
+  const wordCountEl = document.querySelector('.word-count-el');
+  wordCountEl.innerHTML = analyzer.getWordCount(textarea.value) // argumento
 
-    let charactCount = document.querySelector('.charact-count-el');
-    charactCount.innerHTML = analyzer.getCharacterCount(textarea.value)
+  const charactCount = document.querySelector('.charact-count-el');
+  charactCount.innerHTML = analyzer.getCharacterCount(textarea.value)
 
-    let charactCountExcludingSpaces = document.querySelector('.charact-count-no-spaces-el');
-    charactCountExcludingSpaces.innerHTML = analyzer.getCharacterCountExcludingSpaces(textarea.value)
+  const charactCountExcludingSpaces = document.querySelector('.charact-count-no-spaces-el');
+  charactCountExcludingSpaces.innerHTML = analyzer.getCharacterCountExcludingSpaces(textarea.value)
 
-    let averageWordLengthEl = document.querySelector('.word-length-average-el');
-    averageWordLengthEl.innerHTML = analyzer.getAverageWordLength(textarea.value)
+  const averageWordLengthEl = document.querySelector('.word-length-average-el');
+  averageWordLengthEl.innerHTML = analyzer.getAverageWordLength(textarea.value)
 
-    let numberCountEl = document.querySelector('.number-count-el');
-    numberCountEl.innerHTML = analyzer.getNumberCount(textarea.value)
+  const numberCountEl = document.querySelector('.number-count-el');
+  numberCountEl.innerHTML = analyzer.getNumberCount(textarea.value)
 
-    let numberSumEl = document.querySelector('.number-sum-el');
-    numberSumEl.innerHTML = analyzer.getNumberSum(textarea.value)
+  const numberSumEl = document.querySelector('.number-sum-el');
+  numberSumEl.innerHTML = analyzer.getNumberSum(textarea.value)
 
         
-    });
+});
 
 
 //BOTÓN PARA RESETEAR LA CAJA DE TEXTO AL HACER CLICK
 
-let resetButton = document.getElementById('reset-button');
+const resetButton = document.getElementById('reset-button');
 resetButton.addEventListener('click', function () {
-    textarea.value = '';
-    });
+  textarea.value = '';
+});
