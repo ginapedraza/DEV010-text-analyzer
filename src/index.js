@@ -19,6 +19,13 @@ textarea.addEventListener('keyup', ()=>{
 
     let averageWordLengthEl = document.querySelector('.word-length-average-el');
     averageWordLengthEl.innerHTML = analyzer.getAverageWordLength(textarea.value)
+
+    let numberCountEl = document.querySelector('.number-count-el');
+    numberCountEl.innerHTML = analyzer.getNumberCount(textarea.value)
+
+    let numberSumEl = document.querySelector('.number-sum-el');
+    numberSumEl.innerHTML = analyzer.getNumberSum(textarea.value)
+
         
     });
 
