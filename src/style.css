@@ -6,32 +6,33 @@
 }
 
 body {
-    background-color: #a0b0a1;
+    background-color: #17a7a8;
 }
 
 header {
-    color: white;
+    color: #f8f8ec;
     font-family: 'Helvetica';
     font-size: 27px;
     font-weight: bold;
     text-align: center;
     padding: 20px;
-    text-shadow: 2px 2px rgb(58, 56, 56);
+    text-shadow: 1px 1px rgb(58, 56, 56);
     
 }
 
 
 footer {
-    color: black;
+    color: #f8f8ec;
     font-family: 'Helvetica';
     font-size: 20px;
     text-align: right;
     padding: 40px;
+    text-shadow: 0.2px 0.2px rgb(58, 56, 56);
 
 }
 
 ul {
-    background-color: rgb(58, 56, 56);
+    background-color: #122f51;
     list-style: none;
     width: 80%;
     padding: 20px;
@@ -40,7 +41,7 @@ ul {
     justify-content: space-around;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 0 20px 40px rgb(rgb(125, 109, 109));
+    box-shadow: 0 20px 40px rgba(25, 36, 32, 0.2);
     
     
 }
@@ -54,6 +55,7 @@ ul {
     padding-bottom: 10px;
     border: 4px;
     margin: 10px;
+    box-shadow: 2px 2px 4px rgba(117, 196, 166, 0.2);
 
 
 }
@@ -67,34 +69,31 @@ textarea[name = 'user-input'] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
     display: block;
 
 }
 
 #reset-button {
-    background-color: rgb(52, 75, 55);
     display: block;
-    border-radius: 8%;
-    color: white;
-    border: none;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
     margin: auto;
-    font-size: 20px;
-    font-family: Helvetica;
+    border-radius: 4px;
+    background-color: #aedd2b;
+    color: #02416d;
     text-align: center;
-    width: 200px;
-    height: 80px;
-    padding: 12px 12px;
+    cursor: pointer;
+    font-family: 'Helvetica';
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0.2px 0.2px rgb(58, 56, 56);
+    
+
 }
 
 #reset-button:hover {
-    background-color: hwb(124 55% 26%);
+    background-color: hwb(63 30% 13%);
 }
 
-span {
-    font-size: 40px;
-    display: block;
-    padding: 10px;
-    font-weight: bold;
-}

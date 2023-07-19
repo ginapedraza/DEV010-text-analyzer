@@ -32,28 +32,40 @@ const analyzer = {
   },
   getNumberCount: (text) => {
     //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    const words = text.split('');
+    const numbersFound = text.match(/\b\d+(?:[.,]\d+)?\b/g); 
+    /* la expresion match corresponde a lo siguiente, se abre y se cierra con /, 
+    \d+ Representa uno o más dígitos enteros
+    (?:[.,]\d+)?: Esta parte es un grupo no capturador. (?: ... ) define un grupo que no se almacenará en una variable. 
+    [.,] es una clase de caracteres que coincide con un punto o una coma. 
+    \d+ representa uno o más dígitos enteros. La parte ? al final del grupo hace que el grupo completo sea opcional, 
+    es decir, puede haber o no un punto o coma seguido de dígitos enteros, lo que permite que coincida con números enteros o decimales.
+    \b: Otro límite de palabra, para asegurarse de que el número completo (entero o decimal) esté delimitado correctamente en el texto.
+    g: Bandera global para encontrar todas las coincidencias posibles.*/
+    if (!numbersFound) {
+      return 0;
+    }
     let numberCount = 0;
   
-    for (let i = 0; i < words.length; i++) { //ACÁ NECESITO SABER COMO LLEGAR A LA LONGITUD DE LAS COINCIDENCIAS, NO DEL TEXTO COMPLETO
-      if (Number(words[i])) {
-        numberCount++
-      }
-    }  
+    for (let i = 0; i < numbersFound.length; i++) {
+      numberCount++;
+    }
     return numberCount;
+    
   },
   getNumberSum: (text) => {
     //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    const words = text.split('');
+    const numbersFound = text.match(/\b\d+(?:[.,]\d+)?\b/g);
+    if (!numbersFound) {
+      return 0;
+    }
+   
     let numberSum = 0;
-    for (let i = 0; i < words.length; i++) {
-      if (Number(words[i])) {
-        numberSum += Number(words[i]);
-      }
+    for (let i = 0; i < numbersFound.length; i++) {
+      numberSum += parseFloat(numbersFound[i]); // usamos el parseFloat para convertir cada número a su valor numérico
     }
     return numberSum;
-  }
-  
+  } 
+
 };
 
 
