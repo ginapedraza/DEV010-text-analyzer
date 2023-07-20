@@ -1,10 +1,10 @@
 const analyzer = {  
   getWordCount: (text) => { 
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.  
-    if (text.trim() === '') {
+    if (text.trim() === '') { // el trim() lo uso para recortar espacios en blanco antes y despues del texto y hago esta comparación para evitar que el texto sea una cadena vacia.
       return 0;
     }
-    const words = text.trim().split(/\s+/).length;
+    const words = text.trim().split(/\s+/).length; // el split acá me va a separar en un array todo lo que este separados por uno o más espacios en blanco.
     return words; 
       
   },
