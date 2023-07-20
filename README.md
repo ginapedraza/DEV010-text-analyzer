@@ -1,4 +1,25 @@
 # Analizador de texto
+¡Bienvenido al Analizador de texto! 
+
+Esta aplicación esta diseñada para extraer información importante sobre cualquier texto, con ella podemos obtener métricas tales como: 
+
+
+Recuento de palabras: Muestra la cantidad de palabras que encuentra en el texto.
+Recuento de caracteres: Muestra la cantidad total de caracteres introducidos en el texto.
+Recuento de caracteres excluyendo espacios y signos de puntuación: Muestra la cantidad de caracteres sin incluir espacios y signos de puntuación que esten dentro del texto.
+Recuento de números: Muestra la cantidad de números ingresados.
+Suma total de números: Muestra la suma de todos los números que fueron ingresados.
+Longitud media de las palabras: Muestra la longitud media de las palabras ingresadas por el usuario.
+
+¿Cómo funciona?
+
+El primer paso es empezar a escribir un texto. La aplicación cuenta con funciones que calculan los resultados solicitados y los muestra en la pantalla cada vez que el usuario suelta una tecla. Cuenta con un botón para borrar la caja de texto y métricas. 
+
+¿Cómo fue desarrollada?
+
+En primera instancia hice una planificación inicial para estructurar los pasos a seguir basada en la lista de las especificaciones del proyecto y adicionalmente un bosquejo de cómo se vería de forma provisional la aplicación.
+
+Una vez elaborado esto empecé a trabajar en el html, seguido por el css y más tarde el index.js y el analyzer.js. Para cada paso (especialmente la parte de javascript) busqué recursos según la funcionalidad que debía tener cada parte y ejemplos en línea. Poco a poco con ensayo y error fui logrando las soluciones a cada parte hasta que el proyecto tuviera completa funcionalidad. Aproveché OH, consultas en el slack a coaches y a mis compañeras. 
 
 ## Índice
 
